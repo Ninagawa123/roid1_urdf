@@ -1,6 +1,6 @@
 <pre>
 ~/catkin_ws/src/
-└── roid1_demo #ros_package
+└── roid1_urdf #ros_package
     ├── launch
     │   └── display.launch
     └── urdf
@@ -42,4 +42,4 @@
 
 $ CD ~/catkin_ws/src/
 
-$ roslaunch roid1_demo display.launch
+$ roslaunch roid1_urdf display.launch
