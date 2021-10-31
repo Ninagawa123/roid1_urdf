@@ -1,3 +1,5 @@
+# Directory Tree
+
 <pre>
 ~/catkin_ws/src/
 └── roid1_urdf #ros_package
@@ -43,6 +45,10 @@
         ├── roid1.urdf
         └── urdf.rviz
 </pre>
+
+This demo has been confirmed to work on ROS-merodic.
+
+# Usage
 
 $ cd ~/catkin_ws/src/
 
