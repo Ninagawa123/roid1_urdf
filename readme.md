@@ -1,3 +1,24 @@
+# Roid1 URDF
+
+This is a small humanoid robot URDF file and RVIZ operation demo.
+You can operate the joints of the robot with sliders.
+
+
+# Usage
+
+This demo has been confirmed to work on ROS-merodic.
+
+$ cd ~/catkin_ws/src/
+
+$ git clone https://github.com/Ninagawa123/roid1_urdf.git
+
+$ cd ~/catkin_ws/
+
+$ catkin build
+
+$ roslaunch roid1_urdf display.launch
+
+
 # Directory Tree
 
 <pre>
@@ -45,17 +66,3 @@
         ├── roid1.urdf
         └── urdf.rviz
 </pre>
-
-This demo has been confirmed to work on ROS-merodic.
-
-# Usage
-
-$ cd ~/catkin_ws/src/
-
-$ git clone https://github.com/Ninagawa123/roid1_urdf.git
-
-$ cd ~/catkin_ws/
-
-$ catkin build
-
-$ roslaunch roid1_urdf display.launch
