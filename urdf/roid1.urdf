@@ -32,7 +32,7 @@
   <link name="c_waist">
     <visual>
       <geometry>
-        <mesh filename="package://urdf_test/urdf/c_waist.stl" />
+        <mesh filename="package://roid1_urdf/urdf/c_waist.stl" />
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="dark_gray"/>
@@ -50,14 +50,14 @@
   <link name="c_chest">
     <visual>
       <geometry>
-        <mesh filename="package://urdf_test/urdf/c_chest_a.stl" />
+        <mesh filename="package://roid1_urdf/urdf/c_chest_a.stl" />
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="light_gray"/>
     </visual>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_test/urdf/c_chest_b.stl" />
+        <mesh filename="package://roid1_urdf/urdf/c_chest_b.stl" />
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="dark_gray"/>
@@ -75,14 +75,14 @@
   <link name="c_head">
     <visual>
       <geometry>
-        <mesh filename="package://urdf_test/urdf/c_head_a.stl" />
+        <mesh filename="package://roid1_urdf/urdf/c_head_a.stl" />
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="light_gray" />
     </visual>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_test/urdf/c_head_b.stl" />
+        <mesh filename="package://roid1_urdf/urdf/c_head_b.stl" />
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="light_blue"/>
@@ -103,7 +103,7 @@
   <link name="r_shoulder">
     <visual>
       <geometry>
-        <mesh filename="package://urdf_test/urdf/r_shoulder.stl" />
+        <mesh filename="package://roid1_urdf/urdf/r_shoulder.stl" />
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="light_gray">
@@ -112,7 +112,7 @@
     </visual>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_test/urdf/shoulderpoint.stl" />
+        <mesh filename="package://roid1_urdf/urdf/shoulderpoint.stl" />
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="orange"/>
@@ -130,7 +130,7 @@
   <link name="r_uppararm">
     <visual>
       <geometry>
-        <mesh filename="package://urdf_test/urdf/r_upperarm.stl" />
+        <mesh filename="package://roid1_urdf/urdf/r_upperarm.stl" />
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="dark_gray" />
@@ -148,7 +148,7 @@
   <link name="r_elbow">
     <visual>
       <geometry>
-        <mesh filename="package://urdf_test/urdf/r_elbow.stl" />
+        <mesh filename="package://roid1_urdf/urdf/r_elbow.stl" />
       </geometry>
       <origin xyz="0.0 0 0"/>
       <material name="dark_gray" />
@@ -166,7 +166,7 @@
   <link name="r_lowerarm">
     <visual>
       <geometry>
-        <mesh filename="package://urdf_test/urdf/r_lowerarm.stl" />
+        <mesh filename="package://roid1_urdf/urdf/r_lowerarm.stl" />
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="light_gray"/>
@@ -188,7 +188,7 @@
   <link name="l_shoulder">
     <visual>
       <geometry>
-        <mesh filename="package://urdf_test/urdf/l_shoulder.stl" />
+        <mesh filename="package://roid1_urdf/urdf/l_shoulder.stl" />
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="light_gray">
@@ -197,7 +197,7 @@
     </visual>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_test/urdf/shoulderpoint.stl" />
+        <mesh filename="package://roid1_urdf/urdf/shoulderpoint.stl" />
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="orange"/>
@@ -215,7 +215,7 @@
   <link name="l_uppararm">
     <visual>
       <geometry>
-        <mesh filename="package://urdf_test/urdf/l_upperarm.stl" />
+        <mesh filename="package://roid1_urdf/urdf/l_upperarm.stl" />
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="dark_gray" />
@@ -233,7 +233,7 @@
   <link name="l_elbow">
     <visual>
       <geometry>
-        <mesh filename="package://urdf_test/urdf/l_elbow.stl" />
+        <mesh filename="package://roid1_urdf/urdf/l_elbow.stl" />
       </geometry>
       <origin xyz="0.0 0 0"/>
       <material name="dark_gray" />
@@ -251,7 +251,7 @@
   <link name="l_lowerarm">
     <visual>
       <geometry>
-        <mesh filename="package://urdf_test/urdf/l_lowerarm.stl" />
+        <mesh filename="package://roid1_urdf/urdf/l_lowerarm.stl" />
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="light_gray"/>
@@ -273,14 +273,14 @@
   <link name="r_hipjointupper">
     <visual>
       <geometry>
-        <mesh filename="package://urdf_test/urdf/r_hipjointupper.stl" />
+        <mesh filename="package://roid1_urdf/urdf/r_hipjointupper.stl" />
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="light_gray" />
     </visual>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_test/urdf/r_hipjointupperpoint.stl" />
+        <mesh filename="package://roid1_urdf/urdf/r_hipjointupperpoint.stl" />
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="orange"/>
@@ -298,7 +298,7 @@
   <link name="r_hipjointlower">
     <visual>
       <geometry>
-        <mesh filename="package://urdf_test/urdf/r_hipjointlower.stl" />
+        <mesh filename="package://roid1_urdf/urdf/r_hipjointlower.stl" />
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="dark_gray" />
@@ -316,14 +316,14 @@
   <link name="r_upperreg">
     <visual>
       <geometry>
-        <mesh filename="package://urdf_test/urdf/r_upperreg_a.stl" />
+        <mesh filename="package://roid1_urdf/urdf/r_upperreg_a.stl" />
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="dark_gray" />
     </visual>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_test/urdf/r_upperreg_b.stl" />
+        <mesh filename="package://roid1_urdf/urdf/r_upperreg_b.stl" />
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="light_gray" />
@@ -341,14 +341,14 @@
   <link name="r_lowerreg">
     <visual>
       <geometry>
-        <mesh filename="package://urdf_test/urdf/r_lowerreg_a.stl" />
+        <mesh filename="package://roid1_urdf/urdf/r_lowerreg_a.stl" />
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="dark_gray" />
     </visual>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_test/urdf/r_lowerreg_b.stl" />
+        <mesh filename="package://roid1_urdf/urdf/r_lowerreg_b.stl" />
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="light_gray" />
@@ -366,7 +366,7 @@
   <link name="r_ankle">
     <visual>
       <geometry>
-        <mesh filename="package://urdf_test/urdf/r_ankle.stl" />
+        <mesh filename="package://roid1_urdf/urdf/r_ankle.stl" />
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="dark_gray" />
@@ -384,7 +384,7 @@
   <link name="foot_r">
     <visual>
       <geometry>
-        <mesh filename="package://urdf_test/urdf/r_foot.stl" />
+        <mesh filename="package://roid1_urdf/urdf/r_foot.stl" />
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="dark_gray" />
@@ -405,14 +405,14 @@
   <link name="l_hipjointupper">
     <visual>
       <geometry>
-        <mesh filename="package://urdf_test/urdf/l_hipjointupper.stl" />
+        <mesh filename="package://roid1_urdf/urdf/l_hipjointupper.stl" />
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="light_gray" />
     </visual>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_test/urdf/l_hipjointupperpoint.stl" />
+        <mesh filename="package://roid1_urdf/urdf/l_hipjointupperpoint.stl" />
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="orange"/>
@@ -430,7 +430,7 @@
   <link name="l_hipjointlower">
     <visual>
       <geometry>
-        <mesh filename="package://urdf_test/urdf/l_hipjointlower.stl" />
+        <mesh filename="package://roid1_urdf/urdf/l_hipjointlower.stl" />
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="dark_gray" />
@@ -448,14 +448,14 @@
   <link name="l_upperreg">
     <visual>
       <geometry>
-        <mesh filename="package://urdf_test/urdf/l_upperreg_a.stl"/>
+        <mesh filename="package://roid1_urdf/urdf/l_upperreg_a.stl"/>
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="dark_gray" />
     </visual>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_test/urdf/l_upperreg_b.stl"/>
+        <mesh filename="package://roid1_urdf/urdf/l_upperreg_b.stl"/>
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="light_gray" />
@@ -473,14 +473,14 @@
   <link name="l_lowerreg">
     <visual>
       <geometry>
-        <mesh filename="package://urdf_test/urdf/l_lowerreg_a.stl"/>
+        <mesh filename="package://roid1_urdf/urdf/l_lowerreg_a.stl"/>
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="dark_gray"/>
     </visual>
     <visual>
       <geometry>
-        <mesh filename="package://urdf_test/urdf/l_lowerreg_b.stl"/>
+        <mesh filename="package://roid1_urdf/urdf/l_lowerreg_b.stl"/>
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="light_gray"/>
@@ -498,7 +498,7 @@
   <link name="l_ankle">
     <visual>
       <geometry>
-        <mesh filename="package://urdf_test/urdf/l_ankle.stl" />
+        <mesh filename="package://roid1_urdf/urdf/l_ankle.stl" />
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="dark_gray"/>
@@ -516,7 +516,7 @@
   <link name="l_foot">
     <visual>
       <geometry>
-        <mesh filename="package://urdf_test/urdf/l_foot.stl"/>
+        <mesh filename="package://roid1_urdf/urdf/l_foot.stl"/>
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="dark_gray"/>
