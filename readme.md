@@ -41,4 +41,5 @@
 </pre>
 
 $ CD ~/catkin_ws/src/
+
 $ roslaunch roid1_demo display.launch
