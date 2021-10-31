@@ -3,16 +3,16 @@
 <robot name="roid1">
 
   <material name="dark_gray">
-    <color rgba="0.2 0.2 0.2 1"/>
+    <color rgba="0.2 0.2 0.2 1.0"/>
   </material>
   <material name="light_gray">
-    <color rgba="0.8 0.8 0.8 1"/>
+    <color rgba="0.8 0.8 0.8 1.0"/>
   </material>
   <material name="light_blue">
     <color rgba="0.3 0.5 1.0 1.0"/>
   </material>
   <material name="orange">
-    <color rgba="1.0 0.3 0.1 1"/>
+    <color rgba="1.0 0.3 0.1 1.0"/>
   </material>
 
 
