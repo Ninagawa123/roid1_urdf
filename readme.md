@@ -1,6 +1,10 @@
 <pre>
 ~/catkin_ws/src/
 └── roid1_urdf #ros_package
+    ├── CMakeLists.txt
+    ├── package.xml
+    ├── LICENSE
+    ├── readme.md
     ├── launch
     │   └── display.launch
     └── urdf
