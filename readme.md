@@ -44,7 +44,7 @@
         └── urdf.rviz
 </pre>
 
-$ CD ~/catkin_ws/src/
+$ cd ~/catkin_ws/src/
 
 $ git clone https://github.com/Ninagawa123/roid1_urdf.git
 
