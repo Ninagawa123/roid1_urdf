@@ -16,19 +16,18 @@
   </material>
 
 
-  <!--base link 基準点・原点　座標は(0,0,0) -->
+  <!--base link: origin of this model(0,0,0) -->
   <link name="base_link">
   </link>
 
 
-
-  <!--　身　体　中　央　（腰部・胸部・頭部）　-->
-
-  <!--waist 腰の位置-->
+  <!--center of body-->
+  
+  <!--waist-->
   <joint name="c_waist_fixed" type="fixed">
     <parent link="base_link"/>
     <child link="c_waist"/>
-    <origin xyz="0 0 0.278106"/><!--base_linkからの相対座標, 胸を回転させるサーボの中心座標-->
+    <origin xyz="0 0 0.278106"/>
   </joint>
   <link name="c_waist">
     <visual>
@@ -40,16 +39,16 @@
     </visual>
   </link>
 
-  <!--chest 腰ヨー軸の設定と胸の位置-->
+  <!--chest-->
   <joint name="c_chest_yaw" type="revolute">
     <parent link="c_waist"/>
     <child link="c_chest"/>
     <axis xyz="0 0 1"/>
-    <origin xyz="0 0 0.065192"/><!--waist座標からの相対座標, 胸の位置は頭部を回転させるサーボの中心座標-->
+    <origin xyz="0 0 0.065192"/>
     <limit lower="-3" upper="3" effort="0" velocity="0"/>
   </joint>
   <link name="c_chest">
-    <visual><!--visualを2つ使い、sltモデルを2色で表現-->
+    <visual>
       <geometry>
         <mesh filename="package://urdf_test/urdf/c_chest_a.stl" />
       </geometry>
@@ -65,12 +64,12 @@
     </visual>
   </link>
 
-  <!--head 頭の位置-->
+  <!--head-->
   <joint name="c_head_yaw" type="revolute">
     <parent link="c_chest"/>
     <child link="c_head" />
     <axis xyz="0 0 1"/>
-    <origin xyz="0 0 0.039505"/><!--c_chest_yaw座標からの相対座標-->
+    <origin xyz="0 0 0.039505"/>
     <limit lower="-3" upper="3" effort="0" velocity="0"/>
   </joint>
   <link name="c_head">
@@ -91,15 +90,14 @@
   </link>
 
 
+  <!--right side upper body-->
 
-  <!--　右　上　半　身　-->
-
-  <!--r_shoulder_pitch 右肩ピッチ軸-->
+  <!--r_shoulder_pitch-->
   <joint name="r_shoulder_pitch" type="revolute">
     <parent link="c_chest"/>
     <child link="r_shoulder" />
     <axis xyz="0 1 0"/>
-    <origin xyz="0 -0.074375 0"/><!--c_chest座標からの相対座標-->
+    <origin xyz="0 -0.074375 0"/>
     <limit lower="-3" upper="3" effort="0" velocity="0"/>
   </joint>
   <link name="r_shoulder">
@@ -121,12 +119,12 @@
     </visual>
   </link>
 
-  <!--r_shoulder_roll 肩ロール軸-->
+  <!--r_shoulder_roll-->
   <joint name="r_shoulder_roll" type="revolute">
     <parent link="r_shoulder"/>
     <child link="r_uppararm"/>
     <axis xyz="1 0 0"/>
-    <origin xyz="0 0 0"/><!--r_shoulder_pitch座標からの相対座標-->
+    <origin xyz="0 0 0"/>
     <limit lower="-3" upper="3" effort="0" velocity="0"/>
   </joint>
   <link name="r_uppararm">
@@ -139,12 +137,12 @@
     </visual>
   </link>
 
-  <!--r_elbow_yaw 右肘ヨー軸-->
+  <!--r_elbow_yaw-->
   <joint name="r_elbow_yaw" type="revolute">
     <parent link="r_uppararm"/>
     <child link="r_elbow"/>
     <axis xyz="0 0 1"/>
-    <origin xyz="0.004449 0 -0.087511"/><!--r_shoulder_roll座標からの相対座標-->
+    <origin xyz="0.004449 0 -0.087511"/>
     <limit lower="-3" upper="3" effort="0" velocity="0"/>
   </joint>
   <link name="r_elbow">
@@ -157,12 +155,12 @@
     </visual>
   </link>
 
-  <!--r_elbow_pitch 右肘ピッチ軸-->
+  <!--r_elbow_pitch-->
   <joint name="r_elbow_pitch" type="revolute">
     <parent link="r_elbow"/>
     <child link="r_lowerarm"/>
     <axis xyz="0 1 0"/>
-    <origin xyz="0.004698 0 0"/><!--r_elbow_yaw座標からの相対座標-->
+    <origin xyz="0.004698 0 0"/>
     <limit lower="-3" upper="3" effort="0" velocity="0"/>
   </joint>
   <link name="r_lowerarm">
@@ -177,14 +175,14 @@
 
 
 
-  <!--　左　上　半　身　-->
+  <!--left side upper body-->
 
-  <!--chest to l_shoulder 肩ピッチ軸(黄点C)-->
+  <!--chest to l_shoulder-->
   <joint name="l_shoulder_pitch" type="revolute">
     <parent link="c_chest"/>
     <child link="l_shoulder" />
     <axis xyz="0 1 0"/>
-    <origin xyz="0 0.074375 0"/><!--c_chest座標からの相対座標-->
+    <origin xyz="0 0.074375 0"/>
     <limit lower="-3" upper="3" effort="0" velocity="0"/>
   </joint>
   <link name="l_shoulder">
@@ -206,12 +204,12 @@
     </visual>
   </link>
 
-  <!--l_shoulder_roll:左肩ロール軸-->
+  <!--l_shoulder_roll-->
   <joint name="l_shoulder_roll" type="revolute">
     <parent link="l_shoulder"/>
     <child link="l_uppararm"/>
     <axis xyz="1 0 0"/>
-    <origin xyz="0 0 0"/><!--l_shoulder_pitch座標からの相対座標-->
+    <origin xyz="0 0 0"/>
     <limit lower="-3" upper="3" effort="0" velocity="0"/>
   </joint>
   <link name="l_uppararm">
@@ -224,12 +222,12 @@
     </visual>
   </link>
 
-  <!--l_elbow_yaw 左肘ヨー軸-->
+  <!--l_elbow_yaw-->
   <joint name="l_elbow_yaw" type="revolute">
     <parent link="l_uppararm"/>
     <child link="l_elbow"/>
     <axis xyz="0 0 1"/>
-    <origin xyz="0.004449 0 -0.087511"/><!--l_shoulder_roll座標からの相対座標-->
+    <origin xyz="0.004449 0 -0.087511"/>
     <limit lower="-3" upper="3" effort="0" velocity="0"/>
   </joint>
   <link name="l_elbow">
@@ -242,12 +240,12 @@
     </visual>
   </link>
 
-  <!--l_elbow_pitch 左肘ピッチ軸-->
+  <!--l_elbow_pitch-->
   <joint name="l_elbow_pitch" type="revolute">
     <parent link="l_elbow"/>
     <child link="l_lowerarm"/>
     <axis xyz="0 1 0"/>
-    <origin xyz="0.004698 0 0"/><!--l_elbow_yaw座標からの相対座標-->
+    <origin xyz="0.004698 0 0"/>
     <limit lower="-3" upper="3" effort="0" velocity="0"/>
   </joint>
   <link name="l_lowerarm">
@@ -262,14 +260,14 @@
 
 
 
-  <!--　右　下　半　身　-->
+  <!--right side lower body-->
 
-  <!--r_hipjoint_yaw 右股関節ヨー軸-->
+  <!--r_hipjoint_yaw-->
   <joint name="r_hipjoint_yaw" type="revolute">
     <parent link="c_waist"/>
     <child link="r_hipjointupper"/>
     <axis xyz="0 0 1"/>
-    <origin xyz="0.0 -0.021530 -0.044936"/><!--c_waist座標からの相対座標-->
+    <origin xyz="0.0 -0.021530 -0.044936"/>
     <limit lower="-3" upper="3" effort="0" velocity="0"/>
   </joint>
   <link name="r_hipjointupper">
@@ -289,13 +287,12 @@
     </visual>
   </link>
 
-  <!--r_hipjoint_roll 右股関節ロール軸-->
+  <!--r_hipjoint_roll-->
   <joint name="r_hipjoint_roll" type="revolute">
     <parent link="r_hipjointupper"/>
     <child link="r_hipjointlower"/>
     <axis xyz="1 0 0"/>
-    <origin xyz="0 0.004501 0"/><!--r_hipjoint_yaw からの相対座標-->
-    <!-- -->
+    <origin xyz="0 0.004501 0"/>
     <limit lower="-3" upper="3" effort="0" velocity="0"/>
   </joint>
   <link name="r_hipjointlower">
@@ -308,12 +305,12 @@
     </visual>
   </link>
 
-  <!--r_hipjoint_pitch 右股関節ピッチ軸-->
+  <!--r_hipjoint_pitch-->
   <joint name="r_hipjoint_pitch" type="revolute">
     <parent link="r_hipjointlower"/>
     <child link="r_upperreg"/>
     <axis xyz="0 1 0"/>
-    <origin xyz="0.004052 -0.011504 -0.038476"/><!--r_hipjoint_roll からの相対座標-->
+    <origin xyz="0.004052 -0.011504 -0.038476"/>
     <limit lower="-3" upper="3" effort="0" velocity="0"/>
   </joint>
   <link name="r_upperreg">
@@ -333,12 +330,12 @@
     </visual>
   </link>
 
-  <!--r_knee_pitch 右膝関節ピッチ軸-->
+  <!--r_knee_pitch-->
   <joint name="r_knee_pitch" type="revolute">
     <parent link="r_upperreg"/>
     <child link="r_lowerreg"/>
     <axis xyz="0 1 0"/>
-    <origin xyz="0.0 0.0 -0.065008"/><!--r_hipjoint_pitch からの相対座標-->
+    <origin xyz="0.0 0.0 -0.065008"/>
     <limit lower="-3" upper="3" effort="0" velocity="0"/>
   </joint>
   <link name="r_lowerreg">
@@ -358,12 +355,12 @@
     </visual>
   </link>
 
-  <!--r_ankle_pitch 右足首ピッチ軸-->
+  <!--r_ankle_pitch-->
   <joint name="r_ankle_pitch" type="revolute">
     <parent link="r_lowerreg"/>
     <child link="r_ankle"/>
     <axis xyz="0 1 0"/>
-    <origin xyz="0.0 0.0 -0.065203"/><!--r_knee_pitch からの相対座標-->
+    <origin xyz="0.0 0.0 -0.065203"/>
     <limit lower="-3" upper="3" effort="0" velocity="0"/>
   </joint>
   <link name="r_ankle">
@@ -376,12 +373,12 @@
     </visual>
   </link>
 
-  <!--r_ankle_roll 右足首ロール軸-->
+  <!--r_ankle_roll-->
   <joint name="r_ankle_roll" type="revolute">
     <parent link="r_ankle"/>
     <child link="foot_r"/>
     <axis xyz="1 0 0"/>
-    <origin xyz="0.0 0.011404 -0.038550"/><!--r_ankle_pitch からの相対座標-->
+    <origin xyz="0.0 0.011404 -0.038550"/>
     <limit lower="-3" upper="3" effort="0" velocity="0"/>
   </joint>
   <link name="foot_r">
@@ -395,14 +392,14 @@
   </link>
 
 
-  <!--　左　下　半　身　-->
+  <!--left side lower body-->
 
-  <!--l_hipjoint_yaw 左股関節ヨー軸-->
+  <!--l_hipjoint_yaw-->
   <joint name="l_hipjoint_yaw" type="revolute">
     <parent link="c_waist"/>
     <child link="l_hipjointupper"/>
     <axis xyz="0 0 1"/>
-    <origin xyz="0.0 0.021530 -0.044936"/><!--c_waist からの相対座標-->
+    <origin xyz="0.0 0.021530 -0.044936"/>
     <limit lower="-3" upper="3" effort="0" velocity="0"/>
   </joint>
   <link name="l_hipjointupper">
@@ -422,12 +419,12 @@
     </visual>
   </link>
 
-  <!--l_hipjoint_roll 左股関節ロール軸-->
+  <!--l_hipjoint_roll-->
   <joint name="l_hipjoint_roll" type="revolute">
     <parent link="l_hipjointupper"/>
     <child link="l_hipjointlower"/>
     <axis xyz="1 0 0"/>
-    <origin xyz="0 -0.004501 0"/><!--l_hipjoint_yaw からの相対座標-->
+    <origin xyz="0 -0.004501 0"/>
     <limit lower="-3" upper="3" effort="0" velocity="0"/>
   </joint>
   <link name="l_hipjointlower">
@@ -440,12 +437,12 @@
     </visual>
   </link>
 
-  <!--l_hipjoint_pitch 左股関節ピッチ軸-->
+  <!--l_hipjoint_pitch-->
   <joint name="l_hipjoint_pitch" type="revolute">
     <parent link="l_hipjointlower"/>
     <child link="l_upperreg"/>
     <axis xyz="0 1 0"/>
-    <origin xyz="0.004052 0.011504 -0.038476"/><!--l_hipjoint_roll からの相対座標-->
+    <origin xyz="0.004052 0.011504 -0.038476"/>
     <limit lower="-3" upper="3" effort="0" velocity="0"/>
   </joint>
   <link name="l_upperreg">
@@ -465,12 +462,12 @@
     </visual>
   </link>
 
-  <!--l_knee_pitch 左膝ピッチ軸-->
+  <!--l_knee_pitch-->
   <joint name="l_knee_pitch" type="revolute">
     <parent link="l_upperreg"/>
     <child link="l_lowerreg"/>
     <axis xyz="0 1 0"/>
-    <origin xyz="0.0 0.0 -0.065008"/><!--l_hipjoint_pitch からの相対座標-->
+    <origin xyz="0.0 0.0 -0.065008"/>
     <limit lower="-3" upper="3" effort="0" velocity="0"/>
   </joint>
   <link name="l_lowerreg">
@@ -490,12 +487,12 @@
     </visual>
   </link>
 
-  <!--l_ankle_pitch 左足首ピッチ軸-->
+  <!--l_ankle_pitch-->
   <joint name="l_ankle_pitch" type="revolute">
     <parent link="l_lowerreg"/>
     <child link="l_ankle"/>
     <axis xyz="0 1 0"/>
-    <origin xyz="0.0 0.0 -0.065203"/><!--l_knee_pitch からの相対座標-->
+    <origin xyz="0.0 0.0 -0.065203"/>
     <limit lower="-3" upper="3" effort="0" velocity="0"/>
   </joint>
   <link name="l_ankle">
@@ -508,12 +505,12 @@
     </visual>
   </link>
 
-  <!--l_ankle_roll 左足首ロール軸-->
+  <!--l_ankle_roll-->
   <joint name="l_ankle_roll" type="revolute">
     <parent link="l_ankle"/>
     <child link="l_foot"/>
     <axis xyz="1 0 0"/>
-    <origin xyz="0.0 -0.011404 -0.038550"/><!--l_ankle_pitch からの相対座標-->
+    <origin xyz="0.0 -0.011404 -0.038550"/>
     <limit lower="-3" upper="3" effort="0" velocity="0"/>
   </joint>
   <link name="l_foot">
