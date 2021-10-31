@@ -44,6 +44,8 @@ $ CD ~/catkin_ws/src/
 
 $ git clone https://github.com/Ninagawa123/roid1_urdf.git
 
+$ cd ~/catkin_ws/
+
 $ catkin build
 
 $ roslaunch roid1_urdf display.launch
