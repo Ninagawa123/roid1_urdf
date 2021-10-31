@@ -6,7 +6,7 @@ You can operate the joints of the robot with sliders.
 
 # Usage
 
-This demo has been confirmed to work on ROS-merodic.
+This demo has been confirmed to work on ROS-merodic with Rviz.
 
 $ cd ~/catkin_ws/src/
 
