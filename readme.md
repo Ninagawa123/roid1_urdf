@@ -1,12 +1,12 @@
 # Roid1 URDF
 
-This is a small humanoid robot URDF file and RVIZ operation demo.
+This is a small humanoid URDF file and Rviz operation demo.
 You can operate the joints of the robot with sliders.
 
 
 # Usage
 
-This demo has been confirmed to work on ROS-merodic with Rviz.
+This demo has been confirmed to work on ROS-melodic with Rviz.
 
 $ cd ~/catkin_ws/src/
 
