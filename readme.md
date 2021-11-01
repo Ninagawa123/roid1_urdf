@@ -1,6 +1,6 @@
 # Roid1 URDF
 
-This is a URDF file of a small humanoid robot and it's Rviz operation demo.
+This is a URDF file of a small humanoid robot Roid1 and it's Rviz operation demo.
 You can operate the joints of the robot with sliders.
 
 
