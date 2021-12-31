@@ -6,7 +6,7 @@ You can operate the joints of the robot with sliders.
 
 # Usage
 
-This demo has been confirmed to work on ROS-melodic with Rviz.
+This demo has been confirmed to work on ROS-melodic,noetic with Rviz.
 
 $ cd ~/catkin_ws/src/
 
@@ -15,6 +15,8 @@ $ git clone https://github.com/Ninagawa123/roid1_urdf.git
 $ cd ~/catkin_ws/
 
 $ catkin build
+
+$ source ~/catkin_ws/devel/setup.bash
 
 $ roslaunch roid1_urdf display.launch
 
