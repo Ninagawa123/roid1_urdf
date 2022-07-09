@@ -61,12 +61,12 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        ankle_l:
+        l_ankle:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        ankle_r:
+        r_ankle:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -90,62 +90,62 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        elbow_l:
+        l_elbow:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        elbow_r:
+        r_elbow:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        foot_l:
+        l_foot:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        foot_r:
+        r_foot:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        hipjointlower_l:
+        l_hipjointlower:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        hipjointlower_r:
+        r_hipjointlower:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        hipjointupper_l:
+        l_hipjointupper:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        hipjointupper_r:
+        r_hipjointupper:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        lowerarm_l:
+        l_lowerarm:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        lowerarm_r:
+        l_rowerarm:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        lowerreg_l:
+        l_lowerreg:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        lowerreg_r:
+        l_rowerreg:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -155,27 +155,27 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        r_uppararm:
+        r_upperarm:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        shoulder_l:
+        l_shoulder:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        uppararm_l:
+        l_upperarm:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        upperreg_l:
+        l_upperreg:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        upperreg_r:
+        r_upperreg:
           Alpha: 1
           Show Axes: false
           Show Trail: false
