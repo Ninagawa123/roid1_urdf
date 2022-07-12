@@ -122,12 +122,12 @@
   <!--r_shoulder_roll-->
   <joint name="r_shoulder_roll" type="revolute">
     <parent link="r_shoulder"/>
-    <child link="r_uppararm"/>
+    <child link="r_upperarm"/>
     <axis xyz="1 0 0"/>
     <origin xyz="0 0 0"/>
     <limit lower="-3" upper="3" effort="0" velocity="0"/>
   </joint>
-  <link name="r_uppararm">
+  <link name="r_upperarm">
     <visual>
       <geometry>
         <mesh filename="package://roid1_urdf/urdf/r_upperarm.stl" />
@@ -139,7 +139,7 @@
 
   <!--r_elbow_yaw-->
   <joint name="r_elbow_yaw" type="revolute">
-    <parent link="r_uppararm"/>
+    <parent link="r_upperarm"/>
     <child link="r_elbow"/>
     <axis xyz="0 0 1"/>
     <origin xyz="0.004449 0 -0.087511"/>
@@ -207,12 +207,12 @@
   <!--l_shoulder_roll-->
   <joint name="l_shoulder_roll" type="revolute">
     <parent link="l_shoulder"/>
-    <child link="l_uppararm"/>
+    <child link="l_upperarm"/>
     <axis xyz="1 0 0"/>
     <origin xyz="0 0 0"/>
     <limit lower="-3" upper="3" effort="0" velocity="0"/>
   </joint>
-  <link name="l_uppararm">
+  <link name="l_upperarm">
     <visual>
       <geometry>
         <mesh filename="package://roid1_urdf/urdf/l_upperarm.stl" />
@@ -224,7 +224,7 @@
 
   <!--l_elbow_yaw-->
   <joint name="l_elbow_yaw" type="revolute">
-    <parent link="l_uppararm"/>
+    <parent link="l_upperarm"/>
     <child link="l_elbow"/>
     <axis xyz="0 0 1"/>
     <origin xyz="0.004449 0 -0.087511"/>
@@ -376,12 +376,12 @@
   <!--r_ankle_roll-->
   <joint name="r_ankle_roll" type="revolute">
     <parent link="r_ankle"/>
-    <child link="foot_r"/>
+    <child link="r_foot"/>
     <axis xyz="1 0 0"/>
     <origin xyz="0.0 0.011404 -0.038550"/>
     <limit lower="-3" upper="3" effort="0" velocity="0"/>
   </joint>
-  <link name="foot_r">
+  <link name="r_foot">
     <visual>
       <geometry>
         <mesh filename="package://roid1_urdf/urdf/r_foot.stl" />
