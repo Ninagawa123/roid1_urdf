@@ -1,3 +1,34 @@
+
+Skip to content
+Pull requests
+Issues
+Marketplace
+Explore
+@Ninagawa123
+Ninagawa123 /
+roid1_urdf
+Public
+
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+
+    Settings
+
+roid1_urdf/urdf/urdf.rviz
+@kirurobo
+kirurobo Renamed some links
+Latest commit 87ecf82 3 days ago
+History
+2 contributors
+@Ninagawa123
+@kirurobo
+269 lines (269 sloc) 7.5 KB
 Panels:
   - Class: rviz/Displays
     Help Height: 78
@@ -140,12 +171,12 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        l_lowerreg:
+        l_lowerleg:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        l_rowerreg:
+        l_rowerleg:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -170,12 +201,12 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        l_upperreg:
+        l_upperleg:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        r_upperreg:
+        r_upperleg:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -267,3 +298,20 @@ Window Geometry:
   Width: 1612
   X: 72
   Y: 80
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+
+    Terms
+    Privacy
+    Security
+    Status
+    Docs
+    Contact GitHub
+    Pricing
+    API
+    Training
+    Blog
+    About
+
+You have no unread notifications
