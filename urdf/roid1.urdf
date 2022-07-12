@@ -308,22 +308,22 @@
   <!--r_hipjoint_pitch-->
   <joint name="r_hipjoint_pitch" type="revolute">
     <parent link="r_hipjointlower"/>
-    <child link="r_upperreg"/>
+    <child link="r_upperleg"/>
     <axis xyz="0 1 0"/>
     <origin xyz="0.004052 -0.011504 -0.038476"/>
     <limit lower="-3" upper="3" effort="0" velocity="0"/>
   </joint>
-  <link name="r_upperreg">
+  <link name="r_upperleg">
     <visual>
       <geometry>
-        <mesh filename="package://roid1_urdf/urdf/r_upperreg_a.stl" />
+        <mesh filename="package://roid1_urdf/urdf/r_upperleg_a.stl" />
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="dark_gray" />
     </visual>
     <visual>
       <geometry>
-        <mesh filename="package://roid1_urdf/urdf/r_upperreg_b.stl" />
+        <mesh filename="package://roid1_urdf/urdf/r_upperleg_b.stl" />
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="light_gray" />
@@ -332,23 +332,23 @@
 
   <!--r_knee_pitch-->
   <joint name="r_knee_pitch" type="revolute">
-    <parent link="r_upperreg"/>
-    <child link="r_lowerreg"/>
+    <parent link="r_upperleg"/>
+    <child link="r_lowerleg"/>
     <axis xyz="0 1 0"/>
     <origin xyz="0.0 0.0 -0.065008"/>
     <limit lower="-3" upper="3" effort="0" velocity="0"/>
   </joint>
-  <link name="r_lowerreg">
+  <link name="r_lowerleg">
     <visual>
       <geometry>
-        <mesh filename="package://roid1_urdf/urdf/r_lowerreg_a.stl" />
+        <mesh filename="package://roid1_urdf/urdf/r_lowerleg_a.stl" />
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="dark_gray" />
     </visual>
     <visual>
       <geometry>
-        <mesh filename="package://roid1_urdf/urdf/r_lowerreg_b.stl" />
+        <mesh filename="package://roid1_urdf/urdf/r_lowerleg_b.stl" />
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="light_gray" />
@@ -357,7 +357,7 @@
 
   <!--r_ankle_pitch-->
   <joint name="r_ankle_pitch" type="revolute">
-    <parent link="r_lowerreg"/>
+    <parent link="r_lowerleg"/>
     <child link="r_ankle"/>
     <axis xyz="0 1 0"/>
     <origin xyz="0.0 0.0 -0.065203"/>
@@ -440,22 +440,22 @@
   <!--l_hipjoint_pitch-->
   <joint name="l_hipjoint_pitch" type="revolute">
     <parent link="l_hipjointlower"/>
-    <child link="l_upperreg"/>
+    <child link="l_upperleg"/>
     <axis xyz="0 1 0"/>
     <origin xyz="0.004052 0.011504 -0.038476"/>
     <limit lower="-3" upper="3" effort="0" velocity="0"/>
   </joint>
-  <link name="l_upperreg">
+  <link name="l_upperleg">
     <visual>
       <geometry>
-        <mesh filename="package://roid1_urdf/urdf/l_upperreg_a.stl"/>
+        <mesh filename="package://roid1_urdf/urdf/l_upperleg_a.stl"/>
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="dark_gray" />
     </visual>
     <visual>
       <geometry>
-        <mesh filename="package://roid1_urdf/urdf/l_upperreg_b.stl"/>
+        <mesh filename="package://roid1_urdf/urdf/l_upperleg_b.stl"/>
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="light_gray" />
@@ -464,23 +464,23 @@
 
   <!--l_knee_pitch-->
   <joint name="l_knee_pitch" type="revolute">
-    <parent link="l_upperreg"/>
-    <child link="l_lowerreg"/>
+    <parent link="l_upperleg"/>
+    <child link="l_lowerleg"/>
     <axis xyz="0 1 0"/>
     <origin xyz="0.0 0.0 -0.065008"/>
     <limit lower="-3" upper="3" effort="0" velocity="0"/>
   </joint>
-  <link name="l_lowerreg">
+  <link name="l_lowerleg">
     <visual>
       <geometry>
-        <mesh filename="package://roid1_urdf/urdf/l_lowerreg_a.stl"/>
+        <mesh filename="package://roid1_urdf/urdf/l_lowerleg_a.stl"/>
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="dark_gray"/>
     </visual>
     <visual>
       <geometry>
-        <mesh filename="package://roid1_urdf/urdf/l_lowerreg_b.stl"/>
+        <mesh filename="package://roid1_urdf/urdf/l_lowerleg_b.stl"/>
       </geometry>
       <origin xyz="0 0 0"/>
       <material name="light_gray"/>
@@ -489,7 +489,7 @@
 
   <!--l_ankle_pitch-->
   <joint name="l_ankle_pitch" type="revolute">
-    <parent link="l_lowerreg"/>
+    <parent link="l_lowerleg"/>
     <child link="l_ankle"/>
     <axis xyz="0 1 0"/>
     <origin xyz="0.0 0.0 -0.065203"/>
