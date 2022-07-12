@@ -45,12 +45,12 @@ $ roslaunch roid1_urdf display.launch
         ├── l_hipjointupper.stl
         ├── l_hipjointupperpoint.stl
         ├── l_lowerarm.stl
-        ├── l_lowerreg_a.stl
-        ├── l_lowerreg_b.stl
+        ├── l_lowerleg_a.stl
+        ├── l_lowerleg_b.stl
         ├── l_shoulder.stl
         ├── l_upperarm.stl
-        ├── l_upperreg_a.stl
-        ├── l_upperreg_b.stl
+        ├── l_upperleg_a.stl
+        ├── l_upperleg_b.stl
         ├── shoulderpoint.stl
         ├── r_ankle.stl
         ├── r_elbow.stl
@@ -59,12 +59,12 @@ $ roslaunch roid1_urdf display.launch
         ├── r_hipjointupper.stl
         ├── r_hipjointupperpoint.stl
         ├── r_lowerarm.stl
-        ├── r_lowerreg_a.stl
-        ├── r_lowerreg_b.stl
+        ├── r_lowerleg_a.stl
+        ├── r_lowerleg_b.stl
         ├── r_shoulder.stl
         ├── r_upperarm.stl
-        ├── r_upperreg_a.stl
-        ├── r_upperreg_b.stl
+        ├── r_upperleg_a.stl
+        ├── r_upperleg_b.stl
         ├── roid1.urdf
         └── urdf.rviz
 </pre>
