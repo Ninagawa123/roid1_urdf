@@ -1,3 +1,8 @@
+# Renewal and relocation..
+  
+移動しました。新しいURLは以下です。  
+New URL is https://github.com/Ninagawa123/roid1  
+  
 # Roid1 URDF
 
 This is a URDF file of a small humanoid robot Roid1 and it's Rviz operation demo.
